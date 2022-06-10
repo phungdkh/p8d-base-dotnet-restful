@@ -1,0 +1,35 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+option csharp_namespace = "P8D.gRPC";
+
+package category;
+
+// The greeting service definition.
+service Category {
+  // Sends a greeting
+  rpc CategoryPagedList (CategoryPageListRequest) returns (ResponseModel);
+}
+
+// The request message containing the user's name.
+message CategoryPageListRequest {
+  int32 offset = 1;
+  int32 limit = 2;
+  string query = 3;
+  string sortname = 4;
+  bool isdesc = 5;
+}
+
+message CategoryResponse {
+	string id = 1;
+	string name = 2;
+	string description = 3;
+}
+
+// The response message containing the greetings.
+message ResponseModel {
+  int32 status_code = 1;
+  repeated CategoryResponse data = 2;
+  bytes errrors = 3;
+  string message = 4;
+}

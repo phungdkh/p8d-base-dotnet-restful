@@ -1,0 +1,15 @@
+P8D/P8D.Api/bin/
+P8D/P8D.Api/obj/
+P8D/P8D.Domain/obj/
+P8D/P8D.Media/bin/
+P8D/P8D.Media/obj/
+P8D/P8D.Media/wwwroot/Files/
+P8D/P8D.Media/logs/
+P8D/P8D.Domain/bin/
+P8D/.vs/
+P8D/P8D.Infrastructure.Tests/bin/
+P8D/P8D.Infrastructure/obj/
+P8D/P8D.Infrastructure.Tests/obj/
+P8D/P8D.Infrastructure/bin/
+P8D/P8D.gRPC/obj/
+P8D/P8D.gRPC/bin/
